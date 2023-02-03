@@ -1,0 +1,45 @@
+const Details=[
+    {
+    id:"1",
+    Name:"John",
+    Age:24,
+    Course:"MERN",
+    Batch:"October",
+    },
+
+    {
+        id:"2",
+        Name:"Doe",
+        Age:22,
+        Course:"MERN",
+        Batch:"September",
+        },{
+            id:"3",
+            Name:"Biden",
+            Age:23,
+            Course:"MERN",
+            Batch:"September",
+            },
+              {
+                id:"4",
+                Name:"Barber",
+                Age:34,
+                Course:"MERN",
+                Batch:"November",
+                },
+                {
+                    id:"5",
+                    Name:"Christ",
+                    Age:24,
+                    Course:"MERN",
+                    Batch:"December",
+                    },
+                    {
+                        id:"5",
+                        Name:"Elent",
+                        Age:24,
+                        Course:"MERN",
+                        Batch:"November",
+                        }
+]
+export default Details
