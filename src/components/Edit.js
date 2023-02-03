@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
 import Details from './Details';
 import {useNavigate,useLocation} from 'react-router-dom'
 function Edit(){
@@ -6,10 +6,12 @@ function Edit(){
     const[age,setAge]=useState('');
     const[course,setCourse]=useState('');
     const[batch,setBatch]=useState('');
-   
+    let index=useLocation().state.data;
+    console.log(index);
+  
+
     let history=useNavigate();
 
-    let index=useLocation().state;
 
     const handleedit=(e)=>{
         e.preventDefault();
@@ -21,13 +23,13 @@ function Edit(){
        a.Batch=batch;
         history("/student");
     }
+
     useEffect(()=>{
         setName(Details[index].Name)
         setAge(Details[index].Age)
         setCourse(Details[index].Course)
         setBatch(Details[index].Batch)
-       
-    },[])
+    },[index])
     return(
         <>
         <form className="form_Add">

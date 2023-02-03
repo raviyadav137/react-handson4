@@ -51,7 +51,7 @@ return (
                             {item.Batch}
                           </td>
                           <td>
-                            <Link state={index} to={"/edit"} >
+                            <Link state={{data:index}} to={"/edit"} >
                             <div onClick={()=>handleEdit(item.id,item.Name,item.Age,item.Course,item.Batch)}>Edit</div>
                            
                             </Link>
