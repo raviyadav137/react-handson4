@@ -14,12 +14,12 @@ const Student = () => {
 return (
   <>
   <br></br>
-  <div className="data">
+  
      <h2>Students Details</h2>
      <Link to="/create">
      <button className="btn">Add new Studets</button>
      </Link>
-     </div>
+    
      <br/><br/>
      <table border="1" cellSpacing="0" width="80%">
                 <thead>
@@ -52,7 +52,7 @@ return (
                           </td>
                           <td>
                             <Link state={{data:index}} to={"/edit"} >
-                            <div onClick={()=>handleEdit(item.id,item.Name,item.Age,item.Course,item.Batch)}>Edit</div>
+                            <div style={{backgroundColor:'white'}} onClick={()=>handleEdit(item.id,item.Name,item.Age,item.Course,item.Batch)}>Edit</div>
                            
                             </Link>
                           </td>
